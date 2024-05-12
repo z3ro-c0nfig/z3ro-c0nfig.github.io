@@ -1,6 +1,6 @@
 body {
     background-color: rgb(28, 28, 28);
-    background-image: url(image/background.jpg)
+    background-image: url(image/background.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
