@@ -243,7 +243,8 @@
     }
 
     .button3 {
-        background-color: #131313;
+        background-color: #920000;
+        opacity: 70%;
         border: none;
         color: rgb(255, 255, 255);
         padding: 12px 32px;
