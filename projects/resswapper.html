@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
-$(document).keydown(function (event) {
-    if (event.keyCode == 123) { // Prevent F12
-		return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
-		return false;
-    }
-});
-
 function sad() {
   alert("Sadly, ResSwapper is discontinued because there already existed a better resolution changer (alphares)")
   open("https://github.com/braycarlson/alphares")
@@ -19,7 +10,8 @@ function sad() {
 <title>aki0.dev</title>
 <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
 <link rel="stylesheet" href="../styles.css">
-<script src="../script.js"></script> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../script.js"></script>
 </head>
 <body>
 <div2>
