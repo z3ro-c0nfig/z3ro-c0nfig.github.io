@@ -1,0 +1,362 @@
+    body {
+        background-color: rgb(00, 00, 00);
+        background-image: url(image/loadingbackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-family: tahoma;
+        font-size: 21px;
+    }
+    
+    p {
+        color: white;
+        text-align: center;
+        font-family: Arial;
+        font-size: 21px;
+    }
+
+    audio { 
+        display: none;  
+      }
+      
+    .container {
+        width: 300px;
+        background-color: rgb(12, 12, 12);
+        padding: 50px;
+        border-radius: 3%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rainbow {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: tahoma;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 20px;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+
+    .rainbow2 {
+        color: white;
+        text-align: center;
+        font-family: tahoma;
+        font-weight: bold;
+        font-size: 21px;
+        margin-bottom: 10px;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+
+    .rainbow3{
+        color: white;
+        text-align: center;
+        font-family: tahoma;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 10px;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+
+    .rainbow4{
+        color: white;
+        text-align: center;
+        font-family: tahoma;
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .icon-container {
+        height: 40px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+
+    .icon {
+        margin-right: 15px; 
+    }
+
+    .imgpro {
+        box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.572);
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+        border-radius: 3px;
+    }
+
+    .imgpro:hover {
+        box-shadow: 0 12px 16px 0 rgba(59, 59, 59, 0.24), 0 17px 50px 0 rgba(78, 78, 78, 0.19);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .imgpro:not(:hover) {
+        transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .animated-text{
+        font-size: 34px;
+        font-weight: 600;
+        font-family: tahoma;
+        min-width: 280px;
+    }
+
+    .animated-text span{
+        position: relative;
+    }
+
+    .animated-text span::before{
+        content: "";
+        animation: words 956334578348803475384975893074589034579575347504389759734095703974857087340s infinite;
+    }
+
+    .animated-text span::after{
+        content: "";
+        position: absolute;
+        width: calc(100% + 8px);
+        height: 100%;
+        background-color: #0C0C0C;
+        border-left: 2px solid #ffffff;
+        right: -8px;
+        animation: cursor .8s infinite, typing 20s steps(14) infinite;
+    }
+
+    @keyframes words {
+        0%,20%{
+            content: "aki0.dev";
+        }
+    }
+
+    @keyframes typing {
+        0%, 5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+            width: calc(100% + 8px);
+        }
+        10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        to {
+            border-left: 2px solid #0C0C0C;
+        }
+    }
+
+    .disabled-button {
+        cursor: not-allowed;
+        font-size: 14px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .sexy-shadow {
+        width: calc(50% - 10px);
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .sexy-shadow:hover {
+        box-shadow: 0 12px 16px 0 rgba(59, 59, 59, 0.24), 0 17px 50px 0 rgba(78, 78, 78, 0.19);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .sexy-shadow:not(:hover) {
+        transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .text-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        background-color: #131313;
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 12px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: tahoma;
+        border-radius: 3px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition-duration: 0.4s;
+    }
+
+    .button2 {
+        background-color: #131313;
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 12px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: tahoma;
+        border-radius: 3px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition-duration: 0.4s;
+    }
+
+    .button3 {
+        background-color: #920000;
+        opacity: 70%;
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 12px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13.7px;
+        font-family: tahoma;
+        border-radius: 3px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition-duration: 0.4s;
+    }
+
+    .button2:hover {
+        background-color: #ffffff;
+        color: #131313;
+    }
+
+    .button:hover {
+        background-color: #ffffff;
+        color: #131313;
+    }
+
+    .invis {
+        color: #0C0C0C;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+
+    #background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+     }
+
+    .invis2 {
+        color: #0C0C0C;
+        font-size: 6px;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+
+    .prevent-select {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
+
+    .rainbow_text_animated_og {
+        background: linear-gradient(to left, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 7s ease-in-out infinite;
+        background-size: 500% 100%;
+    }
+      
+    .rainbow_text_animated {
+        background: linear-gradient(to right, #a7a5a5, #ffffff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 5s ease-in-out infinite;
+        background-size: 500% 100%;
+    }
+   
+      
+    div2 {
+        width: 280px;
+        height: auto;
+        background-color: rgb(12, 12, 12);
+        padding: 50px;
+        margin: 20px;
+        border-radius: 3%;
+        margin: auto;
+    }
+
+    div2:hover {
+        box-shadow: 0 12px 16px 0 rgba(59, 59, 59, 0.24), 0 17px 50px 0 rgba(159, 159, 159, 0.19);
+        transition: box-shadow 0.3s ease-in-out; /* Add transition for box-shadow */
+    }
+
+    div2:not(:hover) {
+        transition: box-shadow 0.3s ease-in-out; /* Add transition for box-shadow */
+        box-shadow: none;
+    }
+
+    @keyframes rainbow_animation {
+        0%,100% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 100% 0;
+        }
+    }
